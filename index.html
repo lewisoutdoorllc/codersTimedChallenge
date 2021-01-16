@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./crash-course.css">
+    <title>crash-course</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="view-high-scores-button">
+            <div class="style-6">
+                <button id=view-score class="view-high-scores" type="button">View High Scores</button>
+            </div>
+            <div class= "style-6">
+                <p class="timer">75:sec</p>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <div class="main-container">
+
+        <section id="coders-challenge-intro">
+            <div class="intro-start style-1">
+                <div class="style-3"></div>
+                <div class="style-6">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions within the time limit. Keep <br> in mind that incorrect
+                    answers will penalize your score-time by 10 seconds!
+                </p>
+                <button class="start-btn btn-style-1">Start Quiz</button>
+                </div>
+            </div>
+        </section>
+    
+
+        <section id="questions">
+            <div class="questions-list style-1">
+                <div class="style-3"></div>
+                <div class="style-6">
+                <ul class="questions-ul">
+                    <h2 id="question">Here is the question</h2>
+                    <li class="questions-li"><button id="answer-1" value="0" type="button"
+                        class="ans-btn btn-style-1">Answer-1</button></li>
+                    <li class="questions-li"><button id="answer-2" value="1" type="button"
+                        class="ans-btn btn-style-1">Answer-2</button></li>
+                    <li class="questions-li"><button id="answer-3" value="2" type="button"
+                        class="ans-btn btn-style-1">Answer-3</button></li>
+                    <li class="questions-li"><button id="answer-4" value="3" type="button"
+                        class="ans-btn btn-style-1">Answer-4</button></li>
+                </ul>
+                <div id="correct-wrong" class="font-weight-light font-italic">
+                    <hr>
+                    <!-- Correct or Wrong will be added via JS -->
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="final-score">
+            <div class="style-1">
+                <div class="style-3"></div>
+                    <div class="style-6">
+                        <h2>All Done!</h2>
+                        <p>Your final score is: <span id="score" class="style-10">0</span></p>
+                        <p>Enter initials: <span class="initials-form"><input placeholder="initials" id="initials"></span>
+                        <button id="submit-score" class="scores-btn submit-score-btn btn-style-1">Submit</button>
+                        </p>
+                    </div> 
+            </div>
+        </section>
+
+        <section id="high-scores">
+            <div class="style-1">
+                <div class="style-3"></div>
+                <div class="style-6">
+                        <h2>High Scores</h2>
+                        <ol id="high-scores-list"></ol>
+                        <button id="goBack" class="scores-btn go-back-btn btn-style-1">Go Back</button>
+                        <button id="clearScores" class="scores-btn clear-scores-btn btn-style-1">Clear All Scores</button>
+                </div>
+            </div>
+        </section>
+    
+
+
+
+</main>
+
+
+    <script src="./crash-course.js"></script>
+</body>
+</html>

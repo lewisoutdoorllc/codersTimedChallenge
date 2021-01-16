@@ -1,0 +1,107 @@
+* {
+  font-family: 'Noto Sans TC', cursive, sans-serif;
+}
+
+header div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.intro-start {
+  text-align: center; 
+}
+
+.view-high-scores {
+  font-size: 25px;
+  color:rgb(21, 156, 156);
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+.style-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 75px 0px 25px 0px;
+  font-size: 22px;
+}
+
+.style-6 {
+  padding-top: 11px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.start-btn {
+  font-size: 25px;
+  width: 40%;
+  font-weight: bold;
+}
+/*.start-btn:hover {
+background-color: #008CBA;
+color: white;
+}
+*/
+/*.start-btn:active {
+  background-color: rgb(231, 3, 231);
+  box-shadow: 0 2px gray, 
+  transform: translateY(4px);
+}
+*/
+.btn-style-1 {
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 8px;
+}
+.btn-style-1:active {
+  background-color: rgb(231, 3, 231);
+  box-shadow: 0 2px gray; 
+  transform: translateY(1px);
+}
+
+.scores-btn {
+  padding: 0px;
+  width: 200px;
+}
+.questions, li, .ans-btn {
+  padding: 4px 0 1px 5px;
+  width: 200px;
+  text-align: start;
+}
+/* removes bullets from ul */
+.questions-ul {
+  list-style-type: none;
+  display: contents;
+}
+
+.initials-form {
+  height: 30px;
+}
+
+
+
+
+
+/*hides the sections selected until the section is called for */ 
+/*
+
+#questions,
+#final-score,
+#high-scores,
+#correct-wrong {
+  display: none;
+}
+
+*/
+
+
+
