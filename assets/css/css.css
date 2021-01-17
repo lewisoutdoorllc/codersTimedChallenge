@@ -12,6 +12,7 @@ header div {
 
 .intro-start {
   text-align: center; 
+  width: fit-content;
 }
 
 .view-high-scores {
@@ -24,10 +25,11 @@ header div {
 
 .style-1 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 75px 0px 25px 0px;
-  font-size: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 75px 0px 25px 400px;
+    font-size: 22px;
+    width: 50%;
 }
 
 .style-6 {
@@ -35,6 +37,10 @@ header div {
 }
 
 p {
+  font-size: 23px;
+}
+
+#question {
   font-size: 25px;
 }
 
@@ -73,7 +79,7 @@ color: white;
   width: 200px;
 }
 .questions, li, .ans-btn {
-  padding: 4px 0 1px 5px;
+  padding: 5px 0 3px 5px;
   width: 200px;
   text-align: start;
 }
@@ -87,12 +93,7 @@ color: white;
   height: 30px;
 }
 
-
-
-
-
 /*hides the sections selected until the section is called for */ 
-/*
 
 #questions,
 #final-score,
@@ -101,7 +102,7 @@ color: white;
   display: none;
 }
 
-*/
+
 
 
 
