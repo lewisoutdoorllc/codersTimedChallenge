@@ -7,6 +7,7 @@
     <title>Timed Challenge</title>
 </head>
 <body>
+    <!-- start of the header -->
     <header class="header-container">
         <div class="view-high-scores-button">
             <div class="style-6">
@@ -17,23 +18,26 @@
             </div>
         </div>
     </header>
-
+    <!-- end of the header -->
+    
+    <!-- start of the main container -->
 <main>
     <div class="main-container">
-
+    <!-- start of the into page -->
         <section id="coders-challenge-intro">
             <div class="intro-start style-1">
                 <div class="style-6">
                 <h1>Coding Quiz Challenge</h1>
-                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
-                    answers will penalize your score-time by 10 seconds!
+                <p>Try to answer the following code-related questions within <br> the time limit.  Keep in mind that incorrect
+                    answers will penalize <br> your score-time by 10 seconds!
                 </p>
                 <button id="start" class="start-btn btn-style-1">Start Quiz</button>
                 </div>
             </div>
         </section>
-    
+    <!-- end of the into page -->
 
+    <!-- questions section start -->
         <section id="questions">
             <div class="questions-list style-1">
                 <div class="style-6">
@@ -48,14 +52,16 @@
                     <li class="questions-li"><button id="answer-4" value="3" type="button"
                         class="ans-btn btn-style-1">Answer-4</button></li>
                 </ul>
-                <div id="correct-wrong" class="font-weight-light font-italic">
+                <div id="correct-wrong">
+                    <!-- this gives a line at the bottom of the qustions for the correct-wrong prompts -->
                     <hr>
-                    <!-- Correct or Wrong will be added via JS -->
                 </div>
             </div>
             </div>
         </section>
+    <!-- questions section end -->
 
+    <!-- final score section start -->
         <section id="final-score">
             <div class="style-1">
                     <div class="style-6">
@@ -67,7 +73,9 @@
                     </div> 
             </div>
         </section>
+    <!-- final score section end -->
 
+    <!-- high score section end -->
         <section id="high-scores">
             <div class="style-1">
                 <div class="style-6">
@@ -78,12 +86,12 @@
                 </div>
             </div>
         </section>
-    
+    <!-- high score section end -->
 
 
 
 </main>
-
+<!-- end of the main container -->
 
     <script src="./assets/js/script.js"></script>
 </body>
