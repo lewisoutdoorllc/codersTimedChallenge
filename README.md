@@ -5,6 +5,7 @@
 * [Installation](#installation)
 * [Html changes](#html-changes)
 * [CSS changes](#css-changes)
+* [JavaScript changes](#javascript-changes)
 * [Link to site](#link-to-site)
 * [Screenshot](#screenshot-of-landing-page)
 * [Credits](#credits)
@@ -23,10 +24,14 @@ Click the link to site in this README and it will take you to the landing page f
 
 Made a HTML layout for a 5 question quiz with a start page, final score page, and high score page; any changes in the future will be updated here...
 
-# CSS changes
+## CSS changes
 /* CSS changes */ 
 
-Changes to h2 center for text and outline for btn..
+Initial styles for layout, buttons, and mobile usage; any changes in the future will be updated here...
+
+## JavaScript Changes
+
+JavaScrpit was madeup to provide an interative and timed 5 question quiz with the ability to check answers for right and wrong while also deducting time for wrong answers and moving to the next question. At the end of the quiz it stores scores and user information for recall and also allows the information to be deleted when called for.
 
 ## Link to site
 
@@ -41,10 +46,6 @@ https://lewisoutdoorllc.github.io/codersTimedChallenge/
 Thanks for all the help from Kip and other classmates on this little venture for making this happen.. Always fun!! Cheers..
 
 //  Links that helped get to the proper conclusion for providing the solutions to our users requirements..
-
-https://stackoverflow.com/questions/1497481/javascript-password-generator/29770068
-
-https://stackoverflow.com/questions/59340866/random-password-generator-javascript-not-working
 
 ## License
 
