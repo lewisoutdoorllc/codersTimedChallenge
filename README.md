@@ -37,6 +37,9 @@ JavaScrpit was madeup to provide an interative and timed 5 question quiz with th
 
 https://lewisoutdoorllc.github.io/codersTimedChallenge/
 
+Link to GitHub Repo
+https://github.com/lewisoutdoorllc/codersTimedChallenge
+
 ## Screenshot of landing page
 
 ![alt text](./assets/images/coding-quiz-screenshot.png)

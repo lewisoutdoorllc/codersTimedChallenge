@@ -102,24 +102,24 @@ function setQuestion(id) {
 function checkAnswer(event) {
     event.preventDefault();
 
-    // show section for yaynay and append message
+// show section for correct-wrong and displays message
     correctWrong.style.display = "block";
     let p = document.createElement("p");
     correctWrong.appendChild(p);
 
-    // time out after 1 second
+// time out after 1 second
     setTimeout(function () {
         p.style.display = 'none';
     }, 1000);
 
-    // answer checker; if answer is right it goes to the next without deduction; if wrong -10 and to the next question
+// answer checker; if answer is right it goes to the next without deduction; if wrong -10 and to the next question
     if (questions[questionCount].correctAnswer === event.target.value) {
         p.textContent = "Correct!";
     } else if (questions[questionCount].correctAnswer !== event.target.value) {
         secondsLeft = secondsLeft - 10;
         p.textContent = "Wrong!";
     }
-    // allows to go to the next question
+// allows to go to the next question
     if (questionCount < questions.length) {
         questionCount++;
     }
@@ -135,7 +135,7 @@ function addScore(event) {
     let init = initialsInput.value.toUpperCase();
     scoreList.push({ initials: init, score: secondsLeft });
 
-    // sort scores
+// sorts score list
     scoreList = scoreList.sort((a, b) => {
         if (a.score < b.score) {
           return 1;
@@ -151,21 +151,19 @@ function addScore(event) {
         scoreListEl.append(li);
     }
 
-    // Add to local storage
+// add to local storage
     storeScores();
     displayScores();
 }
-
+// storing scores to local 
 function storeScores() {
     localStorage.setItem("scoreList", JSON.stringify(scoreList));
 }
 
 function displayScores() {
-    // Get stored scores from localStorage
-    // Parsing the JSON string to an object
     let storedScoreList = JSON.parse(localStorage.getItem("scoreList"));
 
-    // If scores were retrieved from localStorage, update the scorelist array to it
+// update the scorelist array to it
     if (storedScoreList !== null) {
         scoreList = storedScoreList;
     }

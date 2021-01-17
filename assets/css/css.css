@@ -26,11 +26,14 @@ header div {
 .style-1 {
   display: flex; 
   justify-content: center;
+  padding-top: 50px;
 }
 
 .style-6 {
   padding-top: 11px;
+  max-width: 50%;
 }
+
 
 p {
   font-size: 23px;
@@ -87,6 +90,7 @@ p {
 
 
 /* this hides the sections until they are called on */
+
 #questions,
 #final-score,
 #high-scores,
@@ -99,15 +103,27 @@ p {
   .style-1 {
     width: 100%;
   }
+  .style-6 {
+    max-width: 60%;
+  }
   .view-high-scores {
     font-size: 22px;
   }
   p {
     font-size: 20px;
   }  
-  
-
-
+  .questions, li, .ans-btn {
+    width: 175px;
+  }
+  .btn-style-1 {
+    width: 200px;
+  }
+  .scores-btn {
+    margin-top: 10px;
+  } 
+  #initials {
+    margin-top: 5px;
+  }
 }
 
 
