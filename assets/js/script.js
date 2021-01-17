@@ -3,16 +3,25 @@
 let time = document.querySelector(".timer");
 let secondsLeft = 75;
 let score = document.querySelector("#score");
-// start button 
-const start = document.querySelector("#start");
 // intro
 const codersIntro = document.querySelector("#coders-challenge-intro");
 // questions
 const questionsEl = document.querySelector("#questions");
-//where question goes
+// question and correct-wrong selectors
 let questionEl = document.querySelector("#question");
 let questionCount = 0;
 const correctWrong = document.querySelector("#correct-wrong");
+// all buttons for quiz and answer buttons
+const ansBtn = document.querySelectorAll("button.ans-btn")
+const ans1Btn = document.querySelector("#answer-1");
+const ans2Btn = document.querySelector("#answer-2");
+const ans3Btn = document.querySelector("#answer-3");
+const ans4Btn = document.querySelector("#answer-4");
+const submitScrBtn = document.querySelector("#submit-score");
+const goBackBtn = document.querySelector("#goBack");
+const clearScrBtn = document.querySelector("#clearScores");
+const viewScrBtn = document.querySelector("#view-score");
+const start = document.querySelector("#start");
 // final-scores
 const finalEl = document.querySelector("#final-score");
 let initialsInput = document.querySelector("#initials");
@@ -20,21 +29,6 @@ let initialsInput = document.querySelector("#initials");
 const highscoresEl = document.querySelector("#high-scores");
 let scoreListEl = document.querySelector("#high-scores-list");
 let scoreList = [];
-// answer button class
-const ansBtn = document.querySelectorAll("button.ans-btn")
-// answers
-const ans1Btn = document.querySelector("#answer-1");
-const ans2Btn = document.querySelector("#answer-2");
-const ans3Btn = document.querySelector("#answer-3");
-const ans4Btn = document.querySelector("#answer-4");
-// submit score button
-const submitScrBtn = document.querySelector("#submit-score");
-// goBack button
-const goBackBtn = document.querySelector("#goBack");
-// clearScores button
-const clearScrBtn = document.querySelector("#clearScores");
-// view-score button
-const viewScrBtn = document.querySelector("#view-score");
 // questions; the correct answer is chosen based on the array starting with 0 but allowing the answers to be numbered properly //
 const questions = [ 
     {
@@ -77,7 +71,7 @@ function setTime() {
         }
     }, 1000);
 }
-// start quiz fuction
+// start quiz, timer, and the cycle to go thru the questions 
 function startQuiz() {
     codersIntro.style.display = "none";
     questionsEl.style.display = "block";
