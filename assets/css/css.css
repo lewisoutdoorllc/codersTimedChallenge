@@ -21,6 +21,7 @@ header div {
   height: 30px;
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 .style-1 {
@@ -80,7 +81,7 @@ color: white;
 }
 .questions, li, .ans-btn {
   padding: 5px 0 3px 5px;
-  width: 200px;
+  width: 280px;
   text-align: start;
 }
 /* removes bullets from ul */

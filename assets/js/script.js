@@ -176,28 +176,25 @@ function clearScores() {
     localStorage.clear();
     scoreListEl.innerHTML="";
 }
-
-// EventListeners
-// Start timer and display first question when click start quiz
+// start timer
 start.addEventListener("click", startQuiz);
 
-// Check answers loop
+// check answer
 ansBtn.forEach(item => {
     item.addEventListener('click', checkAnswer);
 });
 
-// Add score
+// add the score with a click
 submitScrBtn.addEventListener("click", addScore);
 
-// Go Back Button
+// go back button and reset timer
 goBackBtn.addEventListener("click", function () {
     highscoresEl.style.display = "none";
     codersIntro.style.display = "block";
     secondsLeft = 75;
     time.textContent = `Time:${secondsLeft}s`;
 });
-
-// Clear the scores
+// clear the scores
 clearScrBtn.addEventListener("click", clearScores);
 
 // View/Hide High Scores Button
