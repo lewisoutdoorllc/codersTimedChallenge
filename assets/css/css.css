@@ -14,17 +14,6 @@ header div {
   text-align: center; 
   
 }
-.view-high-scores {
-  font-size: 25px;
-  color:rgb(21, 156, 156);
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  outline: none;
-}
-.view-high-scores:hover {
-  color: rgb(9, 122, 85);
-}
 /* header styles end */
 /* universal styles */
 .style-1 {
@@ -37,8 +26,6 @@ header div {
   padding-top: 11px;
   max-width: 50%;
 }
-
-
 p {
   font-size: 23px;
 }
@@ -47,13 +34,23 @@ p {
   font-size: 25px;
 }
 /* universal styles end */
-/* button styles */
+/* button styles and header button styles; making buttons interative */
+.view-high-scores {
+  font-size: 25px;
+  color:rgb(21, 156, 156);
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.view-high-scores:hover {
+  color: rgb(9, 122, 85);
+}
 .start-btn {
   font-size: 25px;
   width: 40%;
   font-weight: bold;
 }
-
 .btn-style-1 {
   background-color: purple;
   color: white;
@@ -62,11 +59,6 @@ p {
   font-size: 20px;
   padding: 8px;
 }
-
-.btn-style-1:hover {
-  background-color: rgb(180, 50, 180);
-}
-/* making buttons interactive */
 .btn-style-1:active {
   background-color: rgb(231, 3, 231);
   box-shadow: 0 2px gray; 
@@ -75,7 +67,6 @@ p {
 .btn-style-1:focus {
   outline: none;
 }
-
 .scores-btn {
   padding: 0px;
   width: 200px;
@@ -132,7 +123,9 @@ p {
   #initials {
     margin-top: 5px;
   }
+ 
 }
+
 
 
 
